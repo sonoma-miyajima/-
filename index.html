@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チャクラおみくじ - 素の間</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>チャクラおみくじ</h1>
+            <p class="subtitle">生まれた曜日で、あなたの能力と相性が分かります</p>
+        </header>
+
+        <section class="calculator">
+            <h2>あなたは何曜日生まれ?</h2>
+            <p class="instruction">生年月日を入力してください</p>
+            
+            <div class="input-group">
+                <input type="number" id="year" placeholder="年" min="1900" max="2100">
+                <span class="label">年</span>
+                
+                <input type="number" id="month" placeholder="月" min="1" max="12">
+                <span class="label">月</span>
+                
+                <input type="number" id="day" placeholder="日" min="1" max="31">
+                <span class="label">日</span>
+            </div>
+            
+            <button onclick="calculateDay()" class="calc-button">計算する</button>
+            
+            <div id="result" class="result hidden">
+                <p class="result-text">あなたは</p>
+                <p class="result-day" id="resultDay"></p>
+                <p class="result-text">生まれです!</p>
+                <a id="resultLink" class="result-button" href="#" target="_blank">診断を見る (550円)</a>
+            </div>
+        </section>
+
+        <section class="direct-links">
+            <p class="direct-text">生まれた曜日がすでに分かる方は<br>下のボタンから直接選べます👇</p>
+            
+            <div class="day-buttons">
+                <a href="https://note.com/sonoma_miyajima/n/n071121386a7b" class="day-button sunday" target="_blank">
+                    <span class="day-name">日曜日</span>
+                    <span class="price">550円</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n2298fb4b0c28" class="day-button monday" target="_blank">
+                    <span class="day-name">月曜日</span>
+                    <span class="price">550円</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n8ce52cc61826" class="day-button tuesday" target="_blank">
+                    <span class="day-name">火曜日</span>
+                    <span class="price">550円</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/naa1d55a62e13" class="day-button wednesday" target="_blank">
+                    <span class="day-name">水曜日</span>
+                    <span class="price">550円</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n321c45484ce0" class="day-button thursday" target="_blank">
+                    <span class="day-name">木曜日</span>
+                    <span class="price">550円</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n7f07464e8f1e" class="day-button friday" target="_blank">
+                    <span class="day-name">金曜日</span>
+                    <span class="price">550円</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n94ed555a931a" class="day-button saturday" target="_blank">
+                    <span class="day-name">土曜日</span>
+                    <span class="price">550円</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>宮島・素の間</p>
+            <a href="https://www.instagram.com/sonoma_miyajima/" target="_blank">@sonoma_miyajima</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

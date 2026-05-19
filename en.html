@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chakra Omikuji - Sonoma Miyajima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <a href="index.html" class="lang-button">日本語</a>
+        </div>
+        
+        <header>
+            <h1>Chakra Omikuji</h1>
+            <p class="subtitle">Discover your abilities and compatibility based on your birth day of the week</p>
+        </header>
+
+        <section class="calculator">
+            <h2>What day were you born?</h2>
+            <p class="instruction">Please enter your date of birth</p>
+            
+            <div class="input-group">
+                <input type="number" id="year" placeholder="Year" min="1900" max="2100">
+                <span class="label">Year</span>
+                
+                <input type="number" id="month" placeholder="Month" min="1" max="12">
+                <span class="label">Month</span>
+                
+                <input type="number" id="day" placeholder="Day" min="1" max="31">
+                <span class="label">Day</span>
+            </div>
+            
+            <button onclick="calculateDay()" class="calc-button">Calculate</button>
+            
+            <div id="result" class="result hidden">
+                <p class="result-text">You were born on</p>
+                <p class="result-day" id="resultDay"></p>
+                <a id="resultLink" class="result-button" href="#" target="_blank">View Diagnosis (¥550)</a>
+            </div>
+        </section>
+
+        <section class="direct-links">
+            <p class="direct-text">If you already know your birth day of the week,<br>you can select directly below 👇</p>
+            
+            <div class="day-buttons">
+                <a href="https://note.com/sonoma_miyajima/n/n071121386a7b" class="day-button sunday" target="_blank">
+                    <span class="day-name">Sunday</span>
+                    <span class="price">¥550</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n2298fb4b0c28" class="day-button monday" target="_blank">
+                    <span class="day-name">Monday</span>
+                    <span class="price">¥550</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n8ce52cc61826" class="day-button tuesday" target="_blank">
+                    <span class="day-name">Tuesday</span>
+                    <span class="price">¥550</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/naa1d55a62e13" class="day-button wednesday" target="_blank">
+                    <span class="day-name">Wednesday</span>
+                    <span class="price">¥550</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n321c45484ce0" class="day-button thursday" target="_blank">
+                    <span class="day-name">Thursday</span>
+                    <span class="price">¥550</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n7f07464e8f1e" class="day-button friday" target="_blank">
+                    <span class="day-name">Friday</span>
+                    <span class="price">¥550</span>
+                </a>
+                <a href="https://note.com/sonoma_miyajima/n/n94ed555a931a" class="day-button saturday" target="_blank">
+                    <span class="day-name">Saturday</span>
+                    <span class="price">¥550</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>Sonoma Miyajima</p>
+            <a href="https://www.instagram.com/sonoma_miyajima/" target="_blank">@sonoma_miyajima</a>
+        </footer>
+    </div>
+
+    <script src="script-en.js"></script>
+</body>
+</html>
